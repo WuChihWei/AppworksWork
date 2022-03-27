@@ -1,0 +1,392 @@
+2. Here are a few git and GitHub commands we usually use in software development, please explain the meanings and use cases of them.
+
+●  git status  - The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git. Status output does not show you any information regarding the committed project history. For this, you need to use git log.   
+●  git add  -is the first command in a chain of operations that directs Git to "save" a snapshot of the current project state, into the commit history.  
+ ●  git commit   captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to. 
+●  git log   is a utility tool to review and read a history of everything that happens to a repository.  
+●  git push [ Repo_name ] [ Branch_name ]   is used to upload local repository content to a remote repository. 
+●  git remote -v  lets you create, view, and delete connections to other repositories. 
+●  git branch  is simply a lightweight movable pointer to one of these commits. The default branch name in Git is master . As you start making commits, you're given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.
+
+●  fork  is a git clone operation executed on a server copy of a projects repo.
+
+
+
+3. Please describe how to establish a GitHub repo and how to upload the local projects to GitHub. Try to explain your answers with as much detail as possible.
+
+1> Into Github, tap "New" button on Repositories page. And name the Repository name then click the "Add a README file" and "Choose a license with MIT License"
+
+2> Open terminal text ls) to find the current content of current position, choose the position where you want to store the Github link.
+
+3> In terminal, text (cd) to your intended position, then copy the Repository link, and text (git clone + project link) of the link
+
+4> Move your project to the file where you download from GitHub.
+
+5> After that, in terminal (cd) to your downloaded file then 
+
+6> text (git status)
+
+7> text (git add.)
+
+8> text (git status) again to confirm the condition of the file
+
+9> text (git commit -m"words") to record your modified information
+
+10> Finally, text (git push), check the file whether successfully upload on Github page.
+
+
+
+
+
+Basic
+Batch #16 / iOS Class
+Remote Learning Assignment - Week 1
+
+
+
+1. In Swift, we usually define a variable through the syntax as below:
+                              .var x: Int = 10.
+We use the formula:
+2 * radius * Pi to calculate the area of a circle. Now, please define a variable Pi and assign a value to it. You can refer to the syntax above while thinking about using var or let and which data type it should be.
+
+
+var radius:Int=10
+let Pi = 3.14
+
+let circle = 2*radius*Pi
+print(circle)
+
+
+
+
+2. Create two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average.
+
+var x:Int= 1
+var y:Int =2
+
+let average = ( x + Y ) / 2
+print(average)
+
+
+3. Following Q2, now we want to save the average in a record system, but the system doesn’t accept 65 but 65.0.
+● Please solve this problem so that we can put the average in the record system.
+● Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ).
+
+var x:Int= 1
+var y:Int =2
+
+let average = Double( x + Y ) / 2
+print(average)
+
+
+4. Swift is a very powerful language that can infer the data type for you ( Type inference ) while we still need to know the basics well. Please change the following codes into the one with the data type.
+Ex:.varx=10.=>.varx:Int=10.
+
+
+var flag = true => var flag: bool= true 
+var inputString = "Hello world." => var inputString: string = "Hello world."
+let bitsInBite = 8  =>  let bitsInBite: Int = 8
+let averageScore = 86.8 => let averageScore: float = 86.8
+
+
+
+5. Compound assignment operators are very useful when programming. Please create a salary as 22000, and use unary plus operator adding 28000 to salary, and it will be 50000 after this process.
+
+Var OriginalSalary: Int =  22000
+OriginalSalary += 28000
+print(OriginalSalary)
+
+
+
+6. You should notice that ‘=’ has a different meaning in programming. In the real world, .‘=’ means equal while In programming, ‘=’ means assign . You simply put the right hand side data into the left hand side variable or constant.
+Now please write down the Equality operator in swift.
+
+5==5
+
+
+
+7. Declare two constants that values are 10 and 3 each, then please calculate the remainder and save the result in a constant named remainder .
+
+var x:Int= 10
+var y:Int =3
+let remainder = 10/3
+print(remainder)
+
+
+
+8. Please explain the difference between let and var .
+
+let: You can never change it again. If you try to change, the Swift compiler will give you an error.
+var: You can change in any times.
+
+
+
+9. Please write down naming conventions and rules you learned in this session.
+
+Each letter uses capital word.
+
+
+
+10. What is Type Inference in swift?
+
+enables a compiler to deduce the type of a particular expression automatically when it compiles your code, simply by examining the values you provide.
+
+
+11. What is the problem about this piece of code?
+   var phoneNumber = 0987654321
+phoneNumber = "Hello world."
+
+var phoneNumber = 0987654321 => var phoneNumber: String = “0987654321”
+phoneNumber = "Hello world."  => let phoneNumber: String = "Hello world." 
+
+
+
+
+
+
+Collection
+Batch #16 / iOS Class
+Remote Learning Assignment - Week 1
+You should know how to declare an array in Swift, and also how to add, remove, insert, read an object in an array. You should be familiar with the following syntax: append , .insert , remove .
+Arrays are dangerous in swift. If you access the array with an index which is out of range, your app will crash with fatal error. Please interact with the array very carefully.
+
+
+
+1. Please create an empty array with String data type and save it in a variable named .myFriends .
+
+var myFriends: [String] = [ ]
+
+2. According to Q1, now I have three friends, ‘Ian’, ‘Bomi’, and ‘Kevin’. Please help me to add their name into myFriends array.
+
+myFriends += ["Ian", "Bomi", "Kevin"]
+
+3. Oops,I forgot to add ‘Michael’ who is one of my best friends, please help me to add Michael to the end of myFriends array.
+
+myFriends.append("Michael")
+
+4. Because I usually hang out with Kevin, please move Kevin to the beginning of the .myFriends array.
+
+myFriends.remove(at:2)
+myFriends.insert("Kevin", at: 0)
+
+5. Use for...in to print all the friends in myFriends array.
+
+for myFriend in myFriends {
+    print(myFriend)
+}
+
+6. Now I want to know who is at index 5 in the myFriends array, try to find the answer
+for me. Please explain how you get the answer and why the answer is it.
+
+There is only index 4 in this code, so that index 5 does not exist.
+
+7. How to get the first element in an array?
+
+myFriends.first
+
+8. How to get the last element in an array?
+
+myFriends.last
+
+9. Please create a dictionary with keys of type String, value of type Int, and save it in a variable named myCountryNumber .
+
+var myCountryNumber: [String: Int] = [:]
+
+10. Please add three keys ‘US’, ‘GB’, ‘JP’ with values 1, 44 , 81.
+
+myCountryNumber = ["US":1, "GB":44, "JP":81]
+
+11. Change the ‘GB’ value from 44 to 0.
+
+myCountryNumber.updateValue(0, forKey: "GB")
+
+12. How to declare an empty dictionary?
+
+var emptyDictionary: [String: Int] = [:]
+
+13. How to remove a key-value pair in a dictionary?
+(4/6) 2022.3.21 - 2022.3.27
+          
+myCountryNumber.removeValue(forkey: " “)
+
+
+
+
+Control Flow
+Batch #16 / iOS Class
+Remote Learning Assignment - Week 1
+
+
+
+1. Here is an array:
+ let lottoNumbers = [10, 9, 8, 7, 6, 5]
+Please use For-Loop and Range to print the last three members in the
+.lottoNumbers. array.
+
+
+let lottoNumbers = [10, 9, 8, 7, 6, 5]
+for i in 3...5{
+        print(lottoNumbers[i])
+}
+
+
+
+2. Please use swift syntax to get the result as images list below :
+.5
+.6
+.7
+.8
+.9
+.10
+.10 
+.8 
+.6
+Please find a method which can help us complete these requirements.
+
+
+let list = [5,6,7,8,9,10]
+let reverseList = list.reversed()
+
+for i in list {
+    print(i)
+}
+
+for i in reverseList {
+    if (i % 2 == 0) {
+        print(i)
+}
+}
+
+
+
+
+3. Please use a while loop to solve the above question.
+
+
+var num = 4
+while num < 10 {
+    num += 1
+    print(num)
+}
+
+while num <= 10 && num > 5 {
+    if (num % 2 == 0){
+        print(num)
+}
+    num -= 1
+}
+
+
+4. Please use a repeat-while loop to solve question 2.
+
+
+var num = 4
+repeat{
+    num += 1
+    print(num)
+} while num < 10
+
+repeat {
+    if (num % 2 == 0){
+        print(num)
+}
+    num -= 1
+} while num <= 10 && num > 5
+
+
+
+5. What are the differences between while and repeat-while?
+
+A repeat loop will always execute once since the condition is at the end of the construct whereas a while loop may never execute since the condition is at the beginning of the construct
+
+
+6. Here is the variable isRaining to record the weather. Please write a statement that if the weather is raining, print “It’s raining, I don’t want to work today.”, otherwise print “Although it’s sunny, I still don’t want to work today.”
+
+
+func howIsTheWeather(isRaining: Bool){
+    if(isRaining){
+        print("Is raining, I don't want to work today")
+    } else {
+        print("Although it's sunny, I still don't want to work today")
+    }
+}
+
+
+7. In a company, we usually use numbers to represent job levels. Let’s make an example. There are four job levels: Member, Team Leader, Manager, and Director. We use 1 for the Member, 2 for Team Leader, 3 for Manager, and 4 for Director. Now, create a variable name jobLevel and assign a number to it. If the jobLevel number is in our list, print the relative job title name; if not, just print “We don't have this job”. Please use a switch statement to complete this requirement.
+
+func printJobLevel(jobLevel: Int) {
+    switch jobLevel {
+    case 1:
+        print("Member")
+    case 2:
+        print("Team Leader")
+    case 3:
+        print("Manager")
+    case 4:
+        print("Director")
+    default:
+        print("We don't have this job")
+    }
+}
+
+printJobLevel(jobLevel: 0)
+printJobLevel(jobLevel: 1)
+printJobLevel(jobLevel: 2)
+printJobLevel(jobLevel: 3)
+
+
+
+
+
+
+
+Batch #16 / iOS Class
+Remote Learning Assignment - Week 1
+
+
+Function
+
+
+1. Please declare a function named greet with person as argument label and .name. as a parameter name. This function will return a String. For example, if you call the function greet like this:
+greet(person: "Luke")
+It will return the string: “Hello, Luke”.
+
+
+func greet(person: String) -> String {
+let greeting = "Hello, " + person
+return greeting
+}
+print(greet(person: "LUKE"))
+
+
+2. Please declare a function named multiply with two arguments a and b . This function won’t return any value and will only print out the result of a * b . Be noticed that we want to give argument b a default value of 10.
+
+
+
+Func multiply(a: Int){
+     let b = 10
+     print(a * b)
+}
+
+
+
+3. What’s the difference between argument label and parameter name in function ?
+
+The argument label is used when calling the function; each argument is written in the function call with its argument label before it. The parameter name is used in the implementation of the function.
+
+
+4. What are the return types in the following statements?
+
+ 
+func birthday( ) -> String {
+}
+=>String
+
+func payment( ) -> Double {
+ }
+=> Double
+
+
+
+
+
