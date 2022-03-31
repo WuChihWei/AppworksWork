@@ -1,4 +1,4 @@
-2. Here are a few git and GitHub commands we usually use in software development, please explain the meanings and use cases of them.
+2. 
 
 ●  git status  - The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git. Status output does not show you any information regarding the committed project history. For this, you need to use git log.   
 ●  git add  -is the first command in a chain of operations that directs Git to "save" a snapshot of the current project state, into the commit history.  
@@ -47,8 +47,7 @@ Remote Learning Assignment - Week 1
 1. In Swift, we usually define a variable through the syntax as below:
                               .var x: Int = 10.
 We use the formula:
-2 * radius * Pi to calculate the area of a circle. Now, please define a variable Pi and assign a value to it. You can refer to the syntax above while thinking about using var or let and which data type it should be.
-
+2 * 
 
 var radius:Int=10
 let Pi = 3.14
@@ -59,7 +58,7 @@ print(circle)
 
 
 
-2. Create two constants x and y of type Int then assign any value to them. After that, please calculate the average of x and y and store the result in a constant named average.
+2. 
 
 var x:Int= 1
 var y:Int =2
@@ -68,9 +67,7 @@ let average = ( x + Y ) / 2
 print(average)
 
 
-3. Following Q2, now we want to save the average in a record system, but the system doesn’t accept 65 but 65.0.
-● Please solve this problem so that we can put the average in the record system.
-● Please explain the difference between ( 10 / 3 ) and ( 10.0 / 3.0 ).
+3. 
 
 var x:Int= 1
 var y:Int =2
@@ -79,9 +76,7 @@ let average = Double( x + Y ) / 2
 print(average)
 
 
-* 4. Swift is a very powerful language that can infer the data type for you ( Type inference ) while we still need to know the basics well. Please change the following codes into the one with the data type.
-Ex:.var x = 10 => var x: Int = 10
-
+* 4. 
 
 var flag = true => var flag: Bool = true 
 var inputString = "Hello world." => var inputString: String = "Hello world."
@@ -90,7 +85,7 @@ let averageScore = 86.8 => let averageScore: Double = 86.8
 
 
 
-5. Compound assignment operators are very useful when programming. Please create a salary as 22000, and use unary plus operator adding 28000 to salary, and it will be 50000 after this process.
+5. 
 
 Var OriginalSalary: Int =  22000
 OriginalSalary += 28000
@@ -98,14 +93,13 @@ print(OriginalSalary)
 
 
 
-6. You should notice that ‘=’ has a different meaning in programming. In the real world, .‘=’ means equal while In programming, ‘=’ means assign . You simply put the right hand side data into the left hand side variable or constant.
-Now please write down the Equality operator in swift.
+6. 
 
 5==5
 
 
 
-* 7. Declare two constants that values are 10 and 3 each, then please calculate the remainder and save the result in a constant named remainder .
+* 7. 
 
 let x:Int = 10
 let y:Int = 3
@@ -114,25 +108,24 @@ print(remainder)
 
 
 
-8. Please explain the difference between let and var .
+8. 
 
 let: You can never change it again. If you try to change, the Swift compiler will give you an error.
 var: You can change in any times.
 
 
 
-9. Please write down naming conventions and rules you learned in this session.
+9. 
 
 Each letter uses capital word.
 
 
 
-10. What is Type Inference in swift?
-
+10.
 enables a compiler to deduce the type of a particular expression automatically when it compiles your code, simply by examining the values you provide.
 
 
-11. What is the problem about this piece of code?
+11.
    var phoneNumber = 0987654321
 phoneNumber = "Hello world."
 
@@ -152,24 +145,22 @@ Arrays are dangerous in swift. If you access the array with an index which is ou
 
 
 
-1. Please create an empty array with String data type and save it in a variable named .myFriends .
-
+1. 
 var myFriends: [String] = [ ]
 
-2. According to Q1, now I have three friends, ‘Ian’, ‘Bomi’, and ‘Kevin’. Please help me to add their name into myFriends array.
-
+2. 
 myFriends += ["Ian", "Bomi", "Kevin"]
 
-3. Oops,I forgot to add ‘Michael’ who is one of my best friends, please help me to add Michael to the end of myFriends array.
+3. 
 
 myFriends.append("Michael")
 
-4. Because I usually hang out with Kevin, please move Kevin to the beginning of the .myFriends array.
+4. 
 
 myFriends.remove(at:2)
 myFriends.insert("Kevin", at: 0)
 
-5. Use for...in to print all the friends in myFriends array.
+5.
 
 for myFriend in myFriends {
     print(myFriend)
@@ -180,31 +171,31 @@ for me. Please explain how you get the answer and why the answer is it.
 
 There is only index 4 in this code, so that index 5 does not exist.
 
-7. How to get the first element in an array?
+7. 
 
 myFriends.first
 
-8. How to get the last element in an array?
+8. 
 
 myFriends.last
 
-9. Please create a dictionary with keys of type String, value of type Int, and save it in a variable named myCountryNumber .
+9. 
 
 var myCountryNumber: [String: Int] = [:]
 
-10. Please add three keys ‘US’, ‘GB’, ‘JP’ with values 1, 44 , 81.
+10. 
 
 myCountryNumber = ["US":1, "GB":44, "JP":81]
 
-11. Change the ‘GB’ value from 44 to 0.
+11. 
 
 myCountryNumber.updateValue(0, forKey: "GB")
 
-12. How to declare an empty dictionary?
+12. 
 
 var emptyDictionary: [String: Int] = [:]
 
-13. How to remove a key-value pair in a dictionary?
+13. 
 (4/6) 2022.3.21 - 2022.3.27
           
 myCountryNumber.removeValue(forkey: " “)
@@ -231,17 +222,7 @@ for i in 3...5{
 
 
 
-2. Please use swift syntax to get the result as images list below :
-.5
-.6
-.7
-.8
-.9
-.10
-.10 
-.8 
-.6
-Please find a method which can help us complete these requirements.
+2. 
 
 
 let list = [5,6,7,8,9,10]
@@ -260,8 +241,7 @@ for i in reverseList {
 
 
 
-3. Please use a while loop to solve the above question.
-
+3. 
 
 var num = 4
 while num < 10 {
@@ -277,7 +257,7 @@ while num <= 10 && num > 5 {
 }
 
 
-4. Please use a repeat-while loop to solve question 2.
+4. 
 
 
 var num = 4
@@ -300,8 +280,7 @@ repeat {
 A repeat loop will always execute once since the condition is at the end of the construct whereas a while loop may never execute since the condition is at the beginning of the construct
 
 
-6. Here is the variable isRaining to record the weather. Please write a statement that if the weather is raining, print “It’s raining, I don’t want to work today.”, otherwise print “Although it’s sunny, I still don’t want to work today.”
-
+6.
 
 func howIsTheWeather(isRaining: Bool){
     if(isRaining){
@@ -312,8 +291,7 @@ func howIsTheWeather(isRaining: Bool){
 }
 
 
-7. In a company, we usually use numbers to represent job levels. Let’s make an example. There are four job levels: Member, Team Leader, Manager, and Director. We use 1 for the Member, 2 for Team Leader, 3 for Manager, and 4 for Director. Now, create a variable name jobLevel and assign a number to it. If the jobLevel number is in our list, print the relative job title name; if not, just print “We don't have this job”. Please use a switch statement to complete this requirement.
-
+7. 
 func printJobLevel(jobLevel: Int) {
     switch jobLevel {
     case 1:
@@ -347,10 +325,7 @@ Remote Learning Assignment - Week 1
 Function
 
 
-1. Please declare a function named greet with person as argument label and .name. as a parameter name. This function will return a String. For example, if you call the function greet like this:
-greet(person: "Luke")
-It will return the string: “Hello, Luke”.
-
+1. 
 
 func greet(person: String) -> String {
 let greeting = "Hello, " + person
@@ -359,7 +334,7 @@ return greeting
 print(greet(person: "LUKE"))
 
 
-＊2. Please declare a function named multiply with two arguments a and b . This function won’t return any value and will only print out the result of a * b . Be noticed that we want to give argument b a default value of 10.
+＊2. 
 
 
 
@@ -371,12 +346,12 @@ func multiply( a: Int, b: Int = 10) {
 
 
 
-3. What’s the difference between argument label and parameter name in function ?
+3. 
 
 The argument label is used when calling the function; each argument is written in the function call with its argument label before it. The parameter name is used in the implementation of the function.
 
 
-4. What are the return types in the following statements?
+4.
 
  
 func birthday( ) -> String {
