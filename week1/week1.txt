@@ -80,13 +80,13 @@ print(average)
 
 
 * 4. Swift is a very powerful language that can infer the data type for you ( Type inference ) while we still need to know the basics well. Please change the following codes into the one with the data type.
-Ex:.varx=10.=>.varx:Int=10.
+Ex:.var x = 10 => var x: Int = 10
 
 
-var flag = true => var flag: Bool= true 
+var flag = true => var flag: Bool = true 
 var inputString = "Hello world." => var inputString: String = "Hello world."
 let bitsInBite = 8  =>  let bitsInBite: Int = 8
-let averageScore = 86.8 => let averageScore: Float = 86.8
+let averageScore = 86.8 => let averageScore: Double = 86.8
 
 
 
@@ -107,9 +107,9 @@ Now please write down the Equality operator in swift.
 
 * 7. Declare two constants that values are 10 and 3 each, then please calculate the remainder and save the result in a constant named remainder .
 
-var x:Int = 10
-var y:Int = 3
-let remainder = x/y
+let x:Int = 10
+let y:Int = 3
+let remainder = x % y
 print(remainder)
 
 
