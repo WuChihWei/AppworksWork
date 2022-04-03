@@ -1,37 +1,72 @@
-//1. Declare a class Animal with property gender and method eat(). The data type of gender should be enum Gender as below and when you call eat() method, it will print I eat everything!
-
-class Animal {
-    enum Gender: String {
-        case male
-        case female
-        case undefined
-    }
-    var gender: Gender = .male
-func eat(){
-            print("I eat everything!")
-        }
+//1.
+enum Gender {
+    case male
+    case female
+    case undefined
 }
 
-//2. Declare three classes: Elephant, Tiger, Horse that inherits from Animal and override the eat method to print what they usually eat.
-    
+class Animal {
+    var gender: Gender! = .undefined
+    func eat() {
+        print("I eat everything")
+    }
+//2.
 
+}
 
+class Tiger: Animal {
+    override func eat() {
+       print("I eat meat")
+    }
+}
+let tiger = Tiger.self()
+
+class Elephant: Animal {
+    override func eat() {
+       print("I eat fruit")
+    }
+}
+let elephant = Elephant.self()
+
+class Horse: Animal {
+    override func eat() {
+       print("I eat grass")
+    }
+}
+let horse = Horse.self()
+
+elephant.eat()
+
+//3.
+
+class Zoo {
+    var weeklyHot: Animal
+    init(weeklyHot: Animal) {
+        self.weeklyHot = weeklyHot
+    }
+}
+
+let zoo = Zoo(weeklyHot: Tiger())
+zoo.weeklyHot = tiger
+zoo.weeklyHot = elephant
+zoo.weeklyHot = horse
 
 
 
 //4. What’s the difference between Struct and Class ?
-//Struct is value Type
+
+//Struct is a Value Type, Class is a Reference Type.
+//Value Type: When you copy a value type (i.e., when it’s assigned, initialized or passed into a function, each instance keeps a unique copy of the data. If you change one instance, the other doesn’t change too.
+//Reference Type: When you copy a reference type, each instance shares the data. The reference itself is copied, but not the data it references. When you change one, the other changes too.
 
 
 
 //5. What’s the difference between instance method and type method ?
-
-
+//Instance methods, as described above, are methods that you call on an instance of a particular type. You can also define methods that are called on the type itself. These kinds of methods are called type methods. You indicate type methods by writing the static keyword before the method's func keyword.
 
 
 //6. What does Initilizer do in class and struct ?
-
-
+//Initializatizer is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that's required before the new instance is ready for use.
 
 
 //7. What does self mean in an instance method and a type method ?
@@ -40,3 +75,5 @@ func eat(){
 
 
 //8. What’s the difference between reference type and value type ?
+//A value type instance keeps a unique copy of its data, for example, a struct or an enum.
+//A reference type, shares a single copy of its data, and the type is usually a class, for example class, function, closure.
