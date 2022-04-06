@@ -1,25 +1,33 @@
 
 //1-4
 //These additional information attached to enum values are called associated values.
-//Here, (String) is additional information attached to the value gasoline92, gasoline95..... It represents that the value of (gasoline92, gasoline95.....) can only be String.
-
+//You can define Swift enumerations to store associated values of any given type, and the value types can be different for each case of the enumeration if needed. Enumerations similar to these are known as discriminated unions, tagged unions, or variants in other programming languages.
 
 
 //1.
 
-enum Gasoline: String{
-    case gasoline92 = "92"
-    case gasoline95 = "95"
-    case gasoline98 = "98"
-    case diesel = "100"
+enum Gasoline: String {
+    case gasoline92
+    case gasoline95
+    case gasoline98
+    case diesel
 
-    func getprice() -> String {
-        return self.rawValue
+    func getPrice() -> Int {
+        switch self {
+        case .gasoline92:
+            return 92
+        case .gasoline95:
+            return 95
+        case .gasoline98:
+            return 98
+        case .diesel:
+            return 100
+}
 }
 }
     
 let gas: Gasoline = .diesel
-print(gas.getprice())
+print(gas.getPrice())
                  
 
 
