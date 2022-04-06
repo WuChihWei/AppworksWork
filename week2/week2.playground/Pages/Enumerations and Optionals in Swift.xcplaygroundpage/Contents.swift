@@ -1,51 +1,28 @@
-//1-1,2 test
 
-//enum Gasoline: String{
-//    case gasoline92
-//    case gasoline95
-//    case gasoline98
-//    case diesel
-//}
-//
-//func getprice(_ gasolinePrice: Gasoline) -> String {
-//    switch gasolinePrice {
-//    case .gasoline92:
-//        return "92"
-//    case .gasoline95:
-//        return "95"
-//    case .gasoline98:
-//        return "98"
-//    case .diesel:
-//        return "100"
-//    }
-//}
-//getprice(Gasoline.gasoline98)
+//1-4
+//These additional information attached to enum values are called associated values.
+//Here, (String) is additional information attached to the value gasoline92, gasoline95..... It represents that the value of (gasoline92, gasoline95.....) can only be String.
 
-
-//1-3 test
-//enum Gasoline: String{
-//    case gasoline92 = "92"
-//    case gasoline95 = "95"
-//    case gasoline98 = "98"
-//    case diesel = "100"
-//}
-//var gasolineprice = Gasoline.gasoline92.rawValue
-//print(gasolineprice)
 
 
 //1.
+
 enum Gasoline: String{
     case gasoline92 = "92"
     case gasoline95 = "95"
     case gasoline98 = "98"
     case diesel = "100"
-}
 
-func getprice(_ gasolinePrice: Gasoline) -> String {
-    return gasolinePrice.rawValue
+    func getprice() -> String {
+        return self.rawValue
 }
+}
+    
+let gas: Gasoline = .diesel
+print(gas.getprice())
+                 
 
-print(getprice(Gasoline.gasoline98))
+
 
 
 //2.

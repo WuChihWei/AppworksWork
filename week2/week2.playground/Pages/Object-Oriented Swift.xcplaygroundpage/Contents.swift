@@ -10,6 +10,9 @@ class Animal {
     func eat() {
         print("I eat everything")
     }
+
+    
+
 //2.
 
 }
@@ -53,7 +56,7 @@ zoo.weeklyHot = horse
 
 
 
-//4. What’s the difference between Struct and Class ?
+//4.
 
 //Struct is a Value Type, Class is a Reference Type.
 //Value Type: When you copy a value type (i.e., when it’s assigned, initialized or passed into a function, each instance keeps a unique copy of the data. If you change one instance, the other doesn’t change too.
@@ -61,19 +64,19 @@ zoo.weeklyHot = horse
 
 
 
-//5. What’s the difference between instance method and type method ?
+//5.
 //Instance methods, as described above, are methods that you call on an instance of a particular type. You can also define methods that are called on the type itself. These kinds of methods are called type methods. You indicate type methods by writing the static keyword before the method's func keyword.
 
 
-//6. What does Initilizer do in class and struct ?
+//6.
 //Initializatizer is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that's required before the new instance is ready for use.
 
 
 //7. What does self mean in an instance method and a type method ?
+//Every instance of a type has an implicit property called self , which is exactly equivalent to the instance itself. You use the self property to refer to the current instance within its own instance methods.
 
 
 
-
-//8. What’s the difference between reference type and value type ?
+//8.
 //A value type instance keeps a unique copy of its data, for example, a struct or an enum.
 //A reference type, shares a single copy of its data, and the type is usually a class, for example class, function, closure.
