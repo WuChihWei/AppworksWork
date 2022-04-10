@@ -13,6 +13,7 @@
 		32C9976427FC2D6200DEA6B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C9976227FC2D6200DEA6B7 /* Main.storyboard */; };
 		32C9976627FC2D6300DEA6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C9976527FC2D6300DEA6B7 /* Assets.xcassets */; };
 		32C9976927FC2D6300DEA6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C9976727FC2D6300DEA6B7 /* LaunchScreen.storyboard */; };
+		32CF823728014FD80053D039 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF823628014FD80053D039 /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32C9976527FC2D6300DEA6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C9976827FC2D6300DEA6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C9976A27FC2D6300DEA6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32CF823628014FD80053D039 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				32C9975C27FC2D6200DEA6B7 /* AppDelegate.swift */,
 				32C9975E27FC2D6200DEA6B7 /* SceneDelegate.swift */,
 				32C9976027FC2D6200DEA6B7 /* ViewController.swift */,
+				32CF823628014FD80053D039 /* Info.swift */,
 				32C9976227FC2D6200DEA6B7 /* Main.storyboard */,
 				32C9976527FC2D6300DEA6B7 /* Assets.xcassets */,
 				32C9976727FC2D6300DEA6B7 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C9976127FC2D6200DEA6B7 /* ViewController.swift in Sources */,
+				32CF823728014FD80053D039 /* Info.swift in Sources */,
 				32C9975D27FC2D6200DEA6B7 /* AppDelegate.swift in Sources */,
 				32C9975F27FC2D6200DEA6B7 /* SceneDelegate.swift in Sources */,
 			);
