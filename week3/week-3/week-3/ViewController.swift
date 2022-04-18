@@ -92,8 +92,10 @@ if (segmentedControl.selectedSegmentIndex == 1 && accountTextField.text?.isEmpty
 
 override func viewDidLoad() {
     super.viewDidLoad()
+    
     let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
     segmentedControl.setTitleTextAttributes(titleTextAttributes, for:.normal)
+    
     let titleTextAttributes1 = [NSAttributedString.Key.foregroundColor: UIColor.white]
     segmentedControl.setTitleTextAttributes(titleTextAttributes1, for:.selected)
     segmentedControl.backgroundColor = UIColor.white
@@ -101,7 +103,6 @@ override func viewDidLoad() {
     segmentedControl.selectedSegmentTintColor = UIColor.black
     segmentedControl.layer.borderWidth = 1
    
-        
 }
 //fff
 }

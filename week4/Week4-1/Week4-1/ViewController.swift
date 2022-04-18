@@ -7,56 +7,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+
+//    var contents = [String]()
+    
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
     
-    let contents = [
-    "This is section 0, row 0",
-    "This is section 0, row 1",
-    "This is section 0, row 2",
-    "This is section 0, row 3",
-    "This is section 0, row 4",
-    "This is section 0, row 5",
-    "This is section 0, row 6",
-    "This is section 0, row 7",
-    "This is section 0, row 8",
-    "This is section 0, row 9"
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        for index in 0...9 {
+//            contents.append("This is section 0, row \(index)")
+//        }
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
-
-
-}
-
-extension ViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("you tapped me!")
-    }
-}
-
-extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contents.count
-    }
+            return 10
+        }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = contents[indexPath.row]
-        
-        return cell
-    }
+//        let content = contents[indexPath.row]
+        cell.textLabel?.text = "This is section \(indexPath.section), row \(indexPath.row)"
+    
+            return cell
+        }
 }
